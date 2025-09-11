@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Converter Hammer Unit</title>
+  <link rel="stylesheet" href="converter.css"> 
+</head>
+<body>
+
+  <div class="container">
+    <h1>CONVERTER HAMMER UNIT</h1>
+
+    <!-- Form input nilai dan satuan -->
+    <form onsubmit="convert(); return false;">
+      <fieldset>
+        <legend>Masukkin Nilai dan Satuannya yea</legend>
+
+        <label for="value">Jumlah:</label>
+        <input type="number" id="value" placeholder="contoh: 10" required />
+
+        <label for="unit">Satuan:</label>
+        <select id="unit">
+          <option value="mm">Milimeter (mm)</option>
+          <option value="cm">Centimeter (cm)</option>
+          <option value="dm">Desimeter (dm)</option>
+          <option value="m">Meter (m)</option>
+          <option value="dam">Dekameter (dam)</option>
+          <option value="hm">Hektometer (hm)</option>
+          <option value="km">Kilometer (km)</option>
+        </select>
+
+        <button type="submit">Gas Convert</button>
+      </fieldset>
+    </form>
+
+    <div id="result">Hasilnya akan tampil di sini</div>
+  </div>
+
+  <script src="HU.js"></script> 
+</body>
+</html>
