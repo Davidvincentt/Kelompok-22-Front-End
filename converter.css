@@ -1,27 +1,22 @@
-/* Reset sederhana */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* biar padding & border ikut hitungan lebar */
+  box-sizing: border-box; 
 }
 
-/* Style untuk body */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #74ebd5, #9face6);
   padding: 20px;
-
-  /* Center container di tengah layar */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* supaya full tinggi layar */
+  min-height: 100vh; 
 }
 
-/* Container utama */
 .container {
   max-width: 400px;
-  width: 100%; /* biar input nggak melebihi container */
+  width: 100%; 
   background: white;
   padding: 20px;
   border: 5px solid #ccc;
@@ -29,7 +24,6 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Judul */
 h1 {
   text-align: center;
   color: navy;
@@ -44,7 +38,6 @@ fieldset {
   border-radius: 6px;
 }
 
-/* Legend (judul form) */
 legend {
   font-weight: bold;
   color: navy;
@@ -52,7 +45,6 @@ legend {
   font-size: 20;
 }
 
-/* Input dan select */
 input, select {
   width: 100%;
   padding: 8px;
@@ -60,11 +52,10 @@ input, select {
   border: 1px solid #999;
   border-radius: 4px;
   display: block; 
-  resize: none; /* biar nggak bisa ditarik membesar */
-  box-sizing: border-box; /* fix biar nggak overflow */
+  resize: none; 
+  box-sizing: border-box; 
 }
 
-/* Tombol */
 button {
   width: 100%;
   padding: 10px;
@@ -79,7 +70,6 @@ button:hover {
   background-color: darkblue;
 }
 
-/* Hasil */
 #result {
   margin-top: 15px;
   padding: 10px;
@@ -88,7 +78,6 @@ button:hover {
   text-align: center;
 }
 
-/* Responsif */
 @media (max-width: 480px) {
   .container {
     padding: 15px;
