@@ -13,21 +13,33 @@
     <!-- Form input nilai dan satuan -->
     <form onsubmit="convert(); return false;">
       <fieldset>
-        <legend>Masukkin Nilai dan Satuannya yea</legend>
+        <legend>Pilih Mode Konversi</legend>
+
+        <label for="mode">Mode:</label>
+        <select id="mode" onchange="toggleInputs()">
+          <option value="metricToHU">Metric → HU</option>
+          <option value="HUToMetric">HU → Metric</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Masukkan Nilai</legend>
 
         <label for="value">Jumlah:</label>
         <input type="number" id="value" placeholder="contoh: 10" required />
 
-        <label for="unit">Satuan:</label>
-        <select id="unit">
-          <option value="mm">Milimeter (mm)</option>
-          <option value="cm">Centimeter (cm)</option>
-          <option value="dm">Desimeter (dm)</option>
-          <option value="m">Meter (m)</option>
-          <option value="dam">Dekameter (dam)</option>
-          <option value="hm">Hektometer (hm)</option>
-          <option value="km">Kilometer (km)</option>
-        </select>
+        <div id="unitWrapper">
+          <label for="unit">Satuan Metric:</label>
+          <select id="unit">
+            <option value="mm">Milimeter (mm)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="dm">Desimeter (dm)</option>
+            <option value="m">Meter (m)</option>
+            <option value="dam">Dekameter (dam)</option>
+            <option value="hm">Hektometer (hm)</option>
+            <option value="km">Kilometer (km)</option>
+          </select>
+        </div>
 
         <button type="submit">Gas Convert</button>
       </fieldset>
